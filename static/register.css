@@ -12,10 +12,12 @@ body{
     display: flex;
     justify-content: center;
     align-items:center;
+    
 }
 .form{
     min-height: fit-content;
     width:380px;
+    padding:0px 20px;
 }
 .form-title{
     margin-bottom:50px;
