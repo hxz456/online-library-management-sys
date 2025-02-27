@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLMS : Register</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='register.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='form.css')}}">
 </head>
 <body>
     
@@ -17,31 +17,27 @@
             <div class="form-inputs">
                 <div class="form-field">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
                 </div>
                 <div class="form-field">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
                 </div>
                 
                 <div class="form-field">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
                 </div>
                 <div class="form-field">
                     <label for="re-password">ReType Password</label>
-                    <input type="password" name="re-password" id="re-password">
-                </div>
-
-                <div class="form-field rememberme-checkbox">
-                    
-                    <input type="checkbox" name="remember-me" id="remember-me" value="remember me">
-                    <label for="remember-me">Remember Me</label>
+                    <input type="password" name="re-password" id="re-password" placeholder="Re Type Password">
                 </div>
 
                 <div class="form-field submit">
                     <input type="submit" value="Register">
                 </div>
+
+                <p class="redirect_login"> <i> Already Have An Account ? <a href="{{url_for('login')}}">Login Now</a> </i> </p>
             </div>
         </div>
     </div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLMS : Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='form.css')}}">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="form">
+            <div class="form-title">
+                <h1>Sign In to Your Library</h1>
+                <p>
+                    <i>Unlock knowledge - Borrow, track, and explore!</i>
+                </p>
+            </div>
+            <div class="form-inputs">
+                <div class="form-field">
+                    <label for="name">Name / Email</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name Or Email">
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+               
+
+                <div class="form-field rememberme-checkbox">
+                    
+                    <input type="checkbox" name="remember-me" id="remember-me" value="remember me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+
+                <div class="form-field submit">
+                    <input type="submit" value="Sign In">
+                </div>
+
+                <p class="redirect_login"> <i> Don`t Have An Account ? <a href="{{url_for('register')}}">Register Now</a> </i> </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
